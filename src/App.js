@@ -7,6 +7,9 @@ import DiemConponent from './components/Diem/DiemConponent';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ThemLopComponent from './components/Lophoc/ThemLopComponent';
 import ThemDiemComponent from './components/Diem/ThemDiemComponent';
+import UserHeaderComponent from './components/User/HeaderUserView';
+import Header from './components/User/HeaderUserView';
+import DiemView, { ViewDiem } from './components/User/ViewDiem';
 
 function App() {
   return (
@@ -30,6 +33,24 @@ function App() {
           </Container>
         </div>
       </BrowserRouter>
+      {/* <BrowserRouter>
+        <div className='app_container'>
+          <Container>
+
+            <UserHeaderComponent />
+            <Routes>
+            
+              <Route path='/lophoc' element={<LophocComponent />}></Route>
+
+              <Route path='/' element={<ViewDiem />}></Route>
+
+              <Route path='/add-diem' element={<ThemDiemComponent />}></Route>
+
+            </Routes>
+
+          </Container>
+        </div>
+      </BrowserRouter> */}
 
       <ToastContainer
         position="top-center"
